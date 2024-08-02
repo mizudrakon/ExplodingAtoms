@@ -83,6 +83,9 @@ namespace ExplodingAtoms
                     }
                     else 
                     {
+                        int[] tile = new int[2] { Game.size / 2, Game.size / 2 };
+                        Game.tileQ.Enqueue(Game.findEmpty(tile));
+                        /*
                         if (Game.inGame == false || Game.exit) break;
                         World W;
                         ComputerDreams.startSearch();
@@ -93,7 +96,7 @@ namespace ExplodingAtoms
                         ComputerDreams.currentdepth--;
                         
                         ComputerDreams.Omega = W;                        
-                        
+                        */
                     }
                 
                 }
